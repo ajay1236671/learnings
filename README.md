@@ -42,6 +42,42 @@ docker build . -t myweb:2
 
 > HouseKeeping
 
+Deleting docker images
+
+Image HouseKeeping
+1 - docker image ls
+ - docker image rm <image id from above cmd>
+
+
+
 
  
+or
+
+- docker image rm <image name>
+
+delete all image
+docker image rm $(docker image ls -aq)
+
+
+Container HouseKeeping
+
+stop contains
+
+docker container ls
+docker container stop <container ID>
+
+stop all
+dockr container stop $(docker container ls -aq)
+
+
+Pruning - if not used, delete it. 
+
+docker container prune
+
+
+- Naming container
+
+docker container run -d -p 8080:80 --name=mywebserv httpd:2.4
+
 

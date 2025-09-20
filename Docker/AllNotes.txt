@@ -27,4 +27,9 @@ docker build . -t myweb:2
  CMD and ENTRYPOINT : Executes when the container starts
    CMD : Is like addition para we want to send
    ENTRYPOINT : Determines the main process to run
+ 
+ Expose a port:
+
+ Docker images with different path and different names
+ 
 

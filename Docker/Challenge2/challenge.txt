@@ -1,0 +1,10 @@
+Docker Challenge
+
+Goal: Create a web server
+1. use a fedora base image
+2. Install the web server : dnf -y install httpd
+3. copy the tar file and extract in the relevant path: /var/www/html/
+4. start the web server using : /usr/sbin/httpd
+5. Pass in parameters: "-D" and "FOREGROUND"
+6. Call the image: Challenge:2
+7. runs on port 80
