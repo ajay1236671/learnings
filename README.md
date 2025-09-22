@@ -79,5 +79,13 @@ docker container prune
 - Naming container
 
 docker container run -d -p 8080:80 --name=mywebserv httpd:2.4
+ 
+ Now we can stop this container using the same name
+  docker container stop mywebserv
 
 
+
+- Volume Mounts - Volume allow us to take a folder on local machine or server and attach it directly inside the container.
+
+ we will be using website2 folder for this  Docker -> website2
+    docker container run -p 8082:80 -v  /Users/Learnings/learnings/Docker/website2:/usr/local/apache2/htdocs httpd:2.4
