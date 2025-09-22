@@ -89,3 +89,22 @@ docker container run -d -p 8080:80 --name=mywebserv httpd:2.4
 
  we will be using website2 folder for this  Docker -> website2
     docker container run -p 8082:80 -v  /Users/Learnings/learnings/Docker/website2:/usr/local/apache2/htdocs httpd:2.4
+
+- Image tagging
+
+  renaming tags
+  docker tag myweb:1 mywebserver:latest
+
+
+- Exec : Excecute a command in a running container
+  eg we run a container 
+   docker container run -d -p 8086:80 httpd:2.4
+   then we do
+   docker container exec -it 12eebf48fd10 /bin/bash
+    cd htdocs
+    echo "hello from inside" > index.html     <!-- overwrites index.html with the text "hello from inside" -->
+
+
+
+Docker Repositories 
+
