@@ -100,15 +100,61 @@ docker container run -d -p 8080:80 --name=mywebserv httpd:2.4
 
 
 
-
-
 > Docker Repositories 
 
 It is a folder that stores all the docker images just like github repo but for docker images instead of code.
+
  Created a docker repo on docker hub names new_repo100
  build a image :  docker image build . -t port:1
  tahe the image: docker tag port:1 ajay9869/new_repo100:latest
  push images.  : docker image push ajay9869/new_repo100:latest
  <img width="854" height="523" alt="image" src="https://github.com/user-attachments/assets/45a8dff4-faed-425f-9312-27d10ea0261c" />
+
+
+ # Advance Docker
+
+ > Layers
+  
+  https://jessicagreben.medium.com/digging-into-docker-layers-c22f948ed612 
+
+Ways to see image layers:
+docker image history port:1
+docker image inspect port:1
+
+Make Image smaller by reducing number of Layers
+1. Putting all instruction in single line
+FROM ubuntu:16.04
+RUN apt-get update
+RUN apt install curl -y
+RUN apt install ruby -y
+RUN apt install python -y
+RUN apt install build-essential -y
+RUN apt install apache2 -y
+
+this created a image size of 578 MB
+
+FROM ubuntu:16.04
+RUN apt-get update && \
+ apt install curl -y && \
+ apt install ruby -y && \
+ apt install python -y && \
+ apt install build-essential -y && \
+ apt install apache2 -y
+
+ this created a image size of 520 MB
+
+
+2. Using export and import
+
+docker container run layers:2
+docker export container_ID > ./export.tar
+cat export.tar| docker import - layers:3
+docker image ls     this will show layers:3 will have less memort than layers:2, layers will have any history
+
+
+
+
+
+
 
 
