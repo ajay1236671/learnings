@@ -107,4 +107,6 @@ docker container run -d -p 8080:80 --name=mywebserv httpd:2.4
  build a image :  docker image build . -t port:1
  tahe the image: docker tag port:1 ajay9869/new_repo100:latest
  push images.  : docker image push ajay9869/new_repo100:latest
+ <img width="854" height="523" alt="image" src="https://github.com/user-attachments/assets/45a8dff4-faed-425f-9312-27d10ea0261c" />
+
 
