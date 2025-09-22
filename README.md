@@ -46,15 +46,9 @@ Deleting docker images
 
 Image HouseKeeping
 1 - docker image ls
- - docker image rm <image id from above cmd>
-
-
-
-
- 
+docker image rm <image id from above cmd> 
 or
-
-- docker image rm <image name>
+-docker image rm <image name>
 
 delete all image
 docker image rm $(docker image ls -aq)
@@ -106,5 +100,11 @@ docker container run -d -p 8080:80 --name=mywebserv httpd:2.4
 
 
 
-Docker Repositories 
+> Docker Repositories 
+  It is a folder that stores all the docker images just like github repo but for docker images instead of code.
+
+ Created a docker repo on docker hub names new_repo100
+ build a image :  docker image build . -t port:1
+ tahe the image: docker tag port:1 ajay9869/new_repo100:latest
+ push images.  : docker image push ajay9869/new_repo100:latest
 
