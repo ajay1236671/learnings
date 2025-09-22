@@ -1,4 +1,4 @@
-FROM debian:bullseye 
+FROM ubuntu:16.04
 RUN apt-get update
 RUN apt install curl -y
 RUN apt install ruby -y

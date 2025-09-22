@@ -151,7 +151,7 @@ docker export container_ID > ./export.tar
 cat export.tar| docker import - layers:3
 docker image ls     this will show layers:3 will have less memort than layers:2, layers will have any history
 
-
+3. Instead of large base images we can use small images
 
 
 
