@@ -1,6 +1,4 @@
-# learnings
-
-          DOCKER
+# DOCKER
 
 Section1: Introduction
 
@@ -113,7 +111,7 @@ It is a folder that stores all the docker images just like github repo but for d
  <img width="854" height="523" alt="image" src="https://github.com/user-attachments/assets/45a8dff4-faed-425f-9312-27d10ea0261c" />
 
 
- # Advance Docker
+ - Advance Docker
 
  > Layers
   
@@ -164,7 +162,7 @@ docker image ls     this will show layers:3 will have less memort than layers:2,
 
 
 
-          KUBERNETES
+#          KUBERNETES
 
 It is a wrapper for docker
 
