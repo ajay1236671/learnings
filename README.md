@@ -1,7 +1,6 @@
 # learnings
 
-                                                                          
-                                                                                              **DOCKER**
+          DOCKER
 
 Section1: Introduction
 
@@ -165,8 +164,7 @@ docker image ls     this will show layers:3 will have less memort than layers:2,
 
 
 
-
-                                                                                  **KUBERNETES**
+          KUBERNETES
 
 It is a wrapper for docker
 
