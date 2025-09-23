@@ -158,3 +158,19 @@ docker image ls     this will show layers:3 will have less memort than layers:2,
 
 
 
+
+
+
+
+
+Kubernetes
+
+It is a wrapper for docker
+
+pod - The smallest object in kubernetes.
+
+
+
+
+
+
