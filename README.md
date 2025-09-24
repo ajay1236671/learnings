@@ -186,3 +186,10 @@ creating a pod using pod.yaml
   kubectl create -f pod.yaml
 
 ReplicaSet
+Setting up replica set - create replicaset.yaml 
+
+kubectl create -f replicaset.yaml
+we have set replica as 3 - so if we delete any of the 3 pod it will create new one
+to delete all we can use
+kubectl delete replicaset myreplicaset
+
