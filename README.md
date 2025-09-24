@@ -178,3 +178,11 @@ Challenge 1:
 Create a new file 'completed.yaml'
 Sort the items by catagory and by colour 
 Add a total at the end
+
+
+Deploying 
+Creating a yaml file pod.yaml specifying all the specs in Kubernetes-> deployments
+creating a pod using pod.yaml 
+  kubectl create -f pod.yaml
+
+ReplicaSet
