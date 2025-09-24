@@ -180,12 +180,13 @@ Sort the items by catagory and by colour
 Add a total at the end
 
 
-Deploying 
+Deploying pod
+
 Creating a yaml file pod.yaml specifying all the specs in Kubernetes-> deployments
 creating a pod using pod.yaml 
   kubectl create -f pod.yaml
 
-ReplicaSet
+ReplicaSet : 
 Setting up replica set - create replicaset.yaml 
 
 kubectl create -f replicaset.yaml
