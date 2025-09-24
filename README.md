@@ -171,3 +171,10 @@ ReplicaSet - Ensures N copies of a pod. It ensures a specified number of identic
  
 
 Installing minikube and virtual box
+
+Understanding Yaml-
+
+Challenge 1:
+Create a new file 'completed.yaml'
+Sort the items by catagory and by colour 
+Add a total at the end
