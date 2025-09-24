@@ -166,10 +166,8 @@ docker image ls     this will show layers:3 will have less memort than layers:2,
 
 It is a wrapper for docker
 
-pod - The smallest object in kubernetes.
+pod - The smallest object in kubernetes. It is one or more container
+ReplicaSet - Ensures N copies of a pod. It ensures a specified number of identical pods are always running.
+ 
 
-
-
-
-
-
+Installing minikube and virtual box
