@@ -194,3 +194,11 @@ we have set replica as 3 - so if we delete any of the 3 pod it will create new o
 to delete all we can use
 kubectl delete replicaset myreplicaset
 
+deployment
+created deployment.yaml file
+kubectl create -f deployment.yaml
+
+
+challenge 2:
+details at 
+solution is at
