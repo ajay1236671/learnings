@@ -206,3 +206,12 @@ solution is at https://github.com/ajay1236671/learnings/blob/main/Kubernetes/cha
 
 Multi container pods - pod containing more than 1 container
 added a deployment.yaml file 
+
+init containers - It is a container in a pod that runs before the mail app containers start.
+created a initdeploy.yaml file -
+when we run the deploymentyment, the init container (hello-world) runs first printing "Hello from docker!" and exits immediately
+and then the main container starts and exposes port 80.
+
+
+
+
