@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: nginx
   labels:
-    name: mypod
+    name: myPod
     type: proxy
 spec:
   containers:
@@ -15,3 +15,4 @@ spec:
         cpu: "500m"
     ports:
       - containerPort: 80
+      

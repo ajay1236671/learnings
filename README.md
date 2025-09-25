@@ -202,3 +202,7 @@ kubectl create -f deployment.yaml
 challenge 2:
 details at https://github.com/ajay1236671/learnings/blob/main/Kubernetes/challenge2/challeng.txt
 solution is at https://github.com/ajay1236671/learnings/blob/main/Kubernetes/challenge2/deploymentchallenge2.yaml
+
+
+Multi container pods - pod containing more than 1 container
+added a deployment.yaml file 

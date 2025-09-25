@@ -2,15 +2,11 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: myreplicaset
-  labels:
-    app: myapp
-    key: value
 spec:
   replicas: 3
   selector:
     matchLabels:
       app: nginx
-
   template:
     metadata:
       name: proxy
