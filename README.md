@@ -164,7 +164,7 @@ docker image ls     this will show layers:3 will have less memort than layers:2,
 
 #          KUBERNETES
 
-It is a wrapper for docker
+It is a wrapper for docker. It is an container orchestration platform that automates deployment, scaling, and management of containerized applications.
 
 pod - The smallest object in kubernetes. It is one or more container
 ReplicaSet - Ensures N copies of a pod. It ensures a specified number of identical pods are always running.
@@ -213,5 +213,18 @@ when we run the deploymentyment, the init container (hello-world) runs first pri
 and then the main container starts and exposes port 80.
 
 
+
+
+> NETWORKING
+
+Services:
+
+Kubernetes has its own network it has 10.x.x.x
+accesible inside the cluster
+we have 
+clusterid , nodeport, loadbalalncer, Ingress
+
+
+Ingress: It is an API object that manages external access to service cluster,  HTTP traffic. 
 
 
