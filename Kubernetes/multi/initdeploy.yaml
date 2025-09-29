@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mydeployment
+  name:  mydeployment
   labels:
-    name: mydeployment
+    name:  mydeployment
 spec:
   replicas: 2
   selector:
@@ -20,14 +20,14 @@ spec:
         server: nginx
     spec:
       initContainers:
-        - name: myinit
-          image: hello-world
+      - name: myinit
+        image: hello-world
       containers:
-        - name: nginxcontainer
-          image: nginx:latest
-          resources:
-            limits:
-              memory: "128Mi"
-              cpu: "500m"
-          ports:
-            - containerPort: 80
+      - name: nginxcontainer
+        image: nginx:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+          - containerPort: 80

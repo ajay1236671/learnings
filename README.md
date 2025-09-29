@@ -227,4 +227,11 @@ clusterid , nodeport, loadbalalncer, Ingress
 
 Ingress: It is an API object that manages external access to service cluster,  HTTP traffic. 
 
+Load Balancer:
+
+Pod to Pod communication: Pods in the same namespace can talk to each other directly using their IP addresses. 
+eg.   kubectl exec -it mydeployment-7c4b6f9bcc-79x7t -- curl http://10.244.0.63:80   --- pod 1 communicating with pod 2 
+
+
+Namespaces : namespaces are a way to logically separate resources within the same cluster.
 
