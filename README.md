@@ -235,3 +235,13 @@ eg.   kubectl exec -it mydeployment-7c4b6f9bcc-79x7t -- curl http://10.244.0.63:
 
 Namespaces : namespaces are a way to logically separate resources within the same cluster.
 
+
+
+Storage:
+
+emptydir
+
+Persistent volumes and persistent volume claims
+
+Storage classes
+
