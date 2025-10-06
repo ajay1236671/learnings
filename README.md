@@ -158,6 +158,14 @@ docker image ls     this will show layers:3 will have less memort than layers:2,
 
 
 
+Java application with docker:
+
+Created a springboot java application rest.
+Packeged the application using maven package
+Create a docker file with required step where the jar file coppied to the 
+Create the image 
+Ran the image
+
 
 
 
@@ -207,7 +215,7 @@ solution is at https://github.com/ajay1236671/learnings/blob/main/Kubernetes/cha
 Multi container pods - pod containing more than 1 container
 added a deployment.yaml file 
 
-init containers - It is a container in a pod that runs before the mail app containers start.
+init containers - It is a container in a pod that runs before the main app containers start.
 created a initdeploy.yaml file -
 when we run the deploymentyment, the init container (hello-world) runs first printing "Hello from docker!" and exits immediately
 and then the main container starts and exposes port 80.
@@ -244,4 +252,10 @@ emptydir
 Persistent volumes and persistent volume claims
 
 Storage classes
+
+
+
+HPA and VPA
+Horizontal Pop auto scaler
+Vertical pod auto scaler
 
