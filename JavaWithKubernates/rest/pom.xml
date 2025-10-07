@@ -43,7 +43,7 @@
 	</dependencies>
 
 	<build>
-        <finalName> rest-demo </finalName>
+        <finalName> rest-app </finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
