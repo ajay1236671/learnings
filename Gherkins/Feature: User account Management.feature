@@ -9,4 +9,3 @@ When I send a POST request to "/users" with the following body
 "password" : "securepassword123"
 }
 ''''''
-the
