@@ -3,7 +3,7 @@ package com.testingApplication.app;
 
 import java.util.HashMap;
 
-class Bank {
+public class Bank {
 
     private final HashMap<Pair, Integer> rateMap = new HashMap<>();
 
