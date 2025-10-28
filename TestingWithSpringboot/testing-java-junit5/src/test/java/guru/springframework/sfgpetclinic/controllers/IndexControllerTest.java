@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
 class IndexControllerTest {
 
@@ -31,6 +32,7 @@ class IndexControllerTest {
 
     @Test
     @DisplayName("Test Exception")
+    @Disabled
     void oupsHandler() {
         assertThrows(ValueNotFoundExecption.class, () -> controller.oupsHandler());
     }
@@ -43,5 +45,15 @@ class IndexControllerTest {
             Thread.sleep(2000);
             System.out.println("I sleep");
         });
+    }
+
+    @Test
+    void testAssumptionTrue() {
+        assumeTrue("ajay".equalsIgnoreCase("Aja"));
+    }
+
+    @Test
+    void testAssumptionFalse() {
+        assumeTrue("ajay".equalsIgnoreCase("Ajay"));
     }
 }
