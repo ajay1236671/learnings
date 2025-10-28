@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import java.time.Duration;
 
@@ -29,6 +30,8 @@ class IndexControllerTest {
 
         assertEquals("index", controller.index(), () -> "Another Expensive Message " +
                 "Make me only if you have to");
+
+        assertThat(controller.index()).isEqualTo("index");
     }
 
     @Test
