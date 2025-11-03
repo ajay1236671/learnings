@@ -22,15 +22,15 @@ class PersonTest implements ModelTests {
         assertAll("Test Props Set", () -> assertEquals("Joe", person.getFirstName(), "First Name Failed"), () -> assertEquals("Buck", person.getLastName(), "Last Name Failed"));
     }
 
-    @RepeatedTest(value = 10, name = "{displayName} : {currentRepetition} - {totalRepetitions}")
-    @DisplayName("My Repeated Test")
-    void myRepeatedTest() {
-        System.out.println("My Repeated Test");
-    }
-
-    @RepeatedTest(5)
-    void myRepeatedTestWithDI(TestInfo testInfo, RepetitionInfo repetitionInfo) {
-
-        System.out.println(testInfo.getDisplayName() + ": " + repetitionInfo.getCurrentRepetition());
-    }
+//    @RepeatedTest(value = 10, name = "{displayName} : {currentRepetition} - {totalRepetitions}")
+//    @DisplayName("My Repeated Test")
+//    void myRepeatedTest() {
+//        System.out.println("My Repeated Test");
+//    }
+//
+//    @RepeatedTest(5)
+//    void myRepeatedTestWithDI(TestInfo testInfo, RepetitionInfo repetitionInfo) {
+//
+//        System.out.println(testInfo.getDisplayName() + ": " + repetitionInfo.getCurrentRepetition());
+//    }
 }
