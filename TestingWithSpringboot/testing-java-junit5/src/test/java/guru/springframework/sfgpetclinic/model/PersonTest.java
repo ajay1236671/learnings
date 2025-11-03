@@ -1,6 +1,6 @@
 package guru.springframework.sfgpetclinic.model;
 
-import guru.springframework.ModelTests;
+import guru.springframework.sfgpetclinic.ModelTests;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
