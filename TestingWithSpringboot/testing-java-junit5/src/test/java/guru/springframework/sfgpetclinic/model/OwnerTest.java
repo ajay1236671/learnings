@@ -2,12 +2,13 @@ package guru.springframework.sfgpetclinic.model;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import guru.springframework.ModelTests;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
-class OwnerTest {
+
+class OwnerTest implements ModelTests {
 
     @Test
     void dependentAssertions() {
