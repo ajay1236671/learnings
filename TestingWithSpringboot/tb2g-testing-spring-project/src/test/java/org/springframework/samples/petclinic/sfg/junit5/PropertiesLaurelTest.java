@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Profile;
 import org.springframework.samples.petclinic.sfg.HearingInterpreter;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.TestPropertySource;
@@ -12,10 +11,12 @@ import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@TestPropertySource("classpath:yanny.properties")
-@ActiveProfiles("externalized")
-@SpringJUnitConfig(classes = PropertiesTest.TestConfig.class)
-public class PropertiesTest {
+
+@ActiveProfiles("laurel-properties")
+@TestPropertySource("classpath:laurel.properties")
+@SpringJUnitConfig(classes = PropertiesLaurelTest.TestConfig.class)
+public class PropertiesLaurelTest {
+
 
     @Configuration
     @ComponentScan("org.springframework.samples.petclinic.sfg")
@@ -29,7 +30,7 @@ public class PropertiesTest {
     @Test
     public void whatIHeard() {
         String word = hearingInterpreter.whatIheard();
-        assertEquals("yanny", word);
+        assertEquals("laurel", word);
     }
 
 }
