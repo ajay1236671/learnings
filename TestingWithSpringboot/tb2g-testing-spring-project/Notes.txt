@@ -1,0 +1,15 @@
+Junit4
+
+@RunWith(SpringRunner.class)
+@ContextConfiguration(classes = {BaseConfig.class, LaurelConfig.class})
+
+
+@Test - import org.junit.Test;
+
+Junit5
+
+@SpringJUnitConfig(classes = {BaseConfig.class, LaurelConfig.class}) is equivalent to
+ @ExtendWith(SpringExtension.class)
+ @ContextConfiguration(classes = {BaseConfig.class, LaurelConfig.class})
+
+ @Test - import org.junit.jupiter.api.Test;
