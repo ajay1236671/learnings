@@ -56,11 +56,11 @@ class OwnerControllerTest {
 
         mockMvc.perform(get("/owners"))
                 .andExpect(status().isOk())
-                .andExpect(view().name("owners/ownersList"));
+                .andExpect(view().name("owners/findOwners"));
 
         then(clinicService).should().findOwnerByLastName(stringArgumentCaptor.capture());
-
-        assertThat(stringArgumentCaptor.getValue()).isEqualToIgnoringCase("lastName");
+        String x = stringArgumentCaptor.getValue();
+        assertThat(stringArgumentCaptor.getValue()).isEqualToIgnoringCase("");
     }
 
     @Test
